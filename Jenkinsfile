@@ -6,16 +6,16 @@ pipeline{
         kubernetes{
             defaultContainer 'builder'
             yaml  '''
-            apiVersion: v1
-            kind: Pod
-            spec:
-            containers:
-            - name: builder
-                image: maven:3.6.3-jdk-8
-                command:
-                - sleep
-                args:
-                - infinity
+apiVersion: v1
+kind: Pod
+spec:
+containers:
+- name: builder
+    image: maven:3.6.3-jdk-8
+    command:
+    - sleep
+    args:
+    - infinity
             '''
         }
     }
