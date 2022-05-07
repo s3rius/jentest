@@ -17,4 +17,10 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    @Test
+    public void calcsAreCorrect()
+    {
+        assertTrue( 1 + 1 == 2 );
+    }
 }
